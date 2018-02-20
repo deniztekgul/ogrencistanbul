@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<title>ogrencist.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h2 class="w3-wide"><a style="text-decoration:none" href="test.html"><b>ogrencist.</b></a></h2>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="bio.html" class="w3-bar-item w3-button">Bio</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">Anadolu<i class="fa fa-caret-down"></i></a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="wow2.html" class="w3-bar-item w3-button">Tarihi yerler</a>
+      <a href="wow3.html" class="w3-bar-item w3-button">Restoranlar</a>
+      <a href="wow4.html" class="w3-bar-item w3-button">Alışveriş mekanları</a>
+    </div>
+    <a onclick="myAccFunc1()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn1">Avrupa<i class="fa fa-caret-down"></i></a>
+    <div id="demoAcc1" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="wow5.html" class="w3-bar-item w3-button">Tarihi yerler</a>
+      <a href="wow6.html" class="w3-bar-item w3-button">Restoranlar</a>
+      <a href="wow7.html" class="w3-bar-item w3-button">Alışveriş mekanları</a>
+    </div>
+    <a href="selfie.html" class="w3-bar-item w3-button">Selfie spotları</a>
+    <a href="metro.html" class="w3-bar-item w3-button">Metro haritası</a>
+    </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">ogrencist.</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+<!-- Push down content on small screens -->
+<div class="w3-hide-large" style="margin-top:83px"></div>
+
+<!-- Top header -->
+<header class="w3-container w3-xlarge">
+    <p class="w3-left">Öğrenciler için İstanbul</p>
+    <p class="w3-right"></p>
+  </header>
+
+<!-- Image header -->
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="http://d.hedefhalk.com/news/518161.jpg" style="width:100%">
+  <div class="text">İstanbul</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="http://www.peraasmatavan.com.tr/images/koleksiyon/wesi2t8sgrp4msmeanDeco_54571027.jpg" style="width:100%">
+  <div class="text">İstanbul</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="http://italiensk-forum.dk/media/Istanbul/Topkap_Saray.jpg" style="width:100%">
+  <div class="text">Topkapı Sarayı</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<!-- Footer -->
+<table id='Footer'>
+  <tbody>
+    <tr>
+    <td><a href="https://www.facebook.com"><img src="https://image.freepik.com/free-icon/facebook-logo-in-circular-shape_318-60407.jpg" width="30" height="30"></td>
+    <td><a href="https://www.twitter.com"><img src="https://png.icons8.com/metro/1600/twitter.png" width="30" height="30"></td>
+    <td><a href="https://www.instagram.com"><img src="https://image.flaticon.com/icons/png/512/69/69366.png" width="30" height="30"></td>
+    <td><a href="https://www.youtube.com"><img src="https://image.freepik.com/free-icon/social-youtube-circle_318-26588.jpg" width="30" height="30"></td>
+    <td><a href="https://www.snapchat.com"><img src="https://www.freepnglogos.com/uploads/black-snapchat-logo-picture-13.png" width="30" height="30"></td>
+  </tr>
+</tbody>
+</table>
+
+<script>
+// Accordion
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {x.className = x.className.replace(" w3-show", "");}
+}
+
+// Click on the "Anadolu" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+// Accordion
+function myAccFunc1() {
+    var x = document.getElementById("demoAcc1");
+    if (x.className.indexOf("w3-show") == -1) {x.className += " w3-show";
+    } else {x.className = x.className.replace(" w3-show", "");}
+}
+
+// Click on the "Avrupa" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn1").click();
+
+// Script to open and close sidebar
+function w3_open() {document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";}
+
+function w3_close() {document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";}
+
+    var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+</body>
+</html>
