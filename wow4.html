@@ -59,8 +59,126 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <p class="w3-right"></p>
   </header>
 
-<!-- Image header -->
-<img src="http://d.hedefhalk.com/news/518161.jpg" style="width:100%">
+<!-- Slide -->
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {max-width: 1000px;
+  position: relative;
+  margin: auto;}
+
+/* Next & previous buttons */
+.prev, .next {cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;}
+
+/* Position the "next button" to the right */
+.next {right: 0;
+  border-radius: 3px 0 0 3px;}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);}
+
+/* Number text (1/6 etc) */
+.numbertext {color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;}
+
+/* The dots/bullets/indicators */
+.dot {cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;}
+
+.active, .dot:hover {background-color: #717171;}
+
+/* Fading animation */
+.fade {-webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;}
+
+@-webkit-keyframes fade {from {opacity: .4}
+  to {opacity: 1}}
+
+@keyframes fade {from {opacity: .4}
+  to {opacity: 1}}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {.prev, .next,.text {font-size: 11px}}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="http://aa.com.tr/uploads/Contents/2018/01/04/thumbs_b_c_abd196149ae24e9fa82f771fccd27a04.jpg" style="width:100%">
+<p>Bağdat Caddesi. Üsküdar'dan Otobüs - 12, Otobüs - FB1 ile gitmek 40 dk, Kadıköy'den Minibüs / Dolmuş - KADIKÖY - BOSTANCI ile gitmek 12 dk, Ayrılık Çeşmesi'nden Metro - M4, Otobüs - 16D ile gitmek 17 dk, Söğütlüçeşme'den Otobüs - 4 ile gitmek 17 dk sürer.</p>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="http://i.hurimg.com/i/hurriyet/75/590x332/587e1f33c03c0e24201cbad9.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Kadik%C3%B6ymodadtrassenbahn.jpg" style="width:100%">
+<p>Moda. Şişli'den Otobüs - 252, Metro - M4, Tramvay - T3 ile gitmek 72 dk, Ümraniye'den Otobüs - 14ES, Tramvay - T3 ile gitmek 66 dk, Kağıthane'den Otobüs - 48T, Minibüs / Dolmuş - KADIKÖY - TAKSİM, Tramvay - T3 ile gitmek 102 dk, Şişli/Mecidiyeköy'den Otobüs - 252, Metro - M4, Tramvay - T3 ile gitmek 71 dk, Kadıköy'den Tramvay - T3 ile gitmek 16 dk sürer.</p>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="https://journo.com.tr/wp-content/uploads/2016/03/antika-1-990x557.jpg " style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 6</div>
+  <img src="http://istanbulturkeybook.com/wp-content/uploads/2016/07/bahariye-street.png" style="width:100%">
+<p>Bahariye Caddesi. Kaıdköy Rıhtım'dan yürüyerek veya Tramvay - T3 ile gitmek 10 dk, Kozyatağı'ndan Metro - M4, Otobüs - 16D ile gitmek 36 dk, Nişantaşı, Şişli'den Otobüs - 54K, Otobüs - 34AS, Otobüs - 19F ile gitmek 51 dk sürer.
+Bahariye Caddesi konumuna en yakın duraklar: Altıyol 30 metre uzaklıkta, 1 dk yürüme mesafesi, Çarşı - Kadıköy 381 metre uzaklıkta, 5 dk yürüme mesafesi.</p>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 6</div>
+  <img src="https://www.eliteworldhotels.com.tr/blog-en/ImageHandler.ashx?path=~/Resources/CKEditor/Blog/FtDescription/2017-08-18@17-27-06-598_kad%C4%B1k%C3%B6y%206.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
 
 <!-- Footer -->
 <table id='Footer'>
@@ -72,8 +190,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <td><a href="https://www.youtube.com"><img src="https://image.freepik.com/free-icon/social-youtube-circle_318-26588.jpg" width="30" height="30"></td>
     <td><a href="https://www.snapchat.com"><img src="https://www.freepnglogos.com/uploads/black-snapchat-logo-picture-13.png" width="30" height="30"></td>
     <td><img src="http://freevector.co/wp-content/uploads/2013/01/34441-printer-tool.png" width="30" height="30" onclick="myFunction()"></td>
-    </tr>
-  </tbody>
+   </tr>
+</tbody>
 </table>
 
 <script>
@@ -104,9 +222,36 @@ function w3_open() {document.getElementById("mySidebar").style.display = "block"
 
 function w3_close() {document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";}
- 
+
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+ showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+ showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+ var i;
+ var slides = document.getElementsByClassName("mySlides");
+ var dots = document.getElementsByClassName("dot");
+ if (n > slides.length) {slideIndex = 1}
+ if (n < 1) {slideIndex = slides.length}
+ for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";
+ }
+ for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+ }
+ slides[slideIndex-1].style.display = "block";
+ dots[slideIndex-1].className += " active";
+}
+
 function myFunction() {window.print();}
-  
+
 </script>
 
 </body>
