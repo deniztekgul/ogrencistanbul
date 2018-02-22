@@ -59,8 +59,139 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <p class="w3-right"></p>
   </header>
 
-<!-- Image header -->
-<img src="http://d.hedefhalk.com/news/518161.jpg" style="width:100%">
+<!-- Slide -->
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {max-width: 1000px;
+  position: relative;
+  margin: auto;}
+
+/* Next & previous buttons */
+.prev, .next {cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;}
+
+/* Position the "next button" to the right */
+.next {right: 0;
+  border-radius: 3px 0 0 3px;}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {background-color: rgba(0,0,0,0.8);}
+
+/* Number text (1/8 etc) */
+.numbertext {color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;}
+
+/* The dots/bullets/indicators */
+.dot {cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;}
+
+.active, .dot:hover {background-color: #717171;}
+
+/* Fading animation */
+.fade {-webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;}
+
+@-webkit-keyframes fade {from {opacity: .4}
+  to {opacity: 1}}
+
+@keyframes fade {from {opacity: .4}
+  to {opacity: 1}}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {.prev, .next,.text {font-size: 11px}}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 8</div>
+  <img src="https://thumbs-prod.si-cdn.com/FH9-KmOd6aHxPq8n4rcHqI-Pm1A=/800x600/filters:no_upscale()/https://public-media.smithsonianmag.com/filer/15/08/150831da-cd7d-4f56-b728-91605c99cc03/42-25559546.jpg" style="width:100%">
+<p>Kapalıçarşı - Fatih. Kabataş'tan Tramvay - T1 ile gitmek 27 dk, Otobüs - 28 ile gitmek 28 dk, Yenikapı'dan Otobüs - 97 ile gitmek 17 dk sürer. (Kadıköy'den metro ile Ayrılık Çeşmesi'ne bağlanarak veya direk Üsküdar'dan Marmaray ile Yenikapı'ya geçebilirsiniz.)
+</p>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 8</div>
+  <img src="https://www.istanbul-pictures.com/data/media/16/grand-bazaar-clothes.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 8</div>
+  <img src="https://gezievreni.com/wp-content/uploads/2017/03/Istiklal-Caddesi-Istanbul.jpg" style="width:100%">
+<p>İstiklal Caddesi. Eminönü'nden Tramvay - T1 ile gitmek 18 dk, Kadıköy'den Minibüs / Dolmuş - KADIKÖY - TAKSİM ile gitmek 50 dk, Yenibosna'dan Metro - M1A, Metro - M2 ile gitmek 48 dk sürer. </p>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 8</div>
+  <img src="http://www.slrobertson.com/images/europe/turkey/istiklal-street-2-b.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 8</div>
+  <img src="http://uteddergi.com/public/resimler/urun/1681204201614441353.jpg   " style="width:100%">
+<p>Nişantaşı. Beşiktaş'tan Otobüs - 30M ile gitmek 16 dk (Kaıköy'den vapur ile geçebilirsiniz.), Şişli/Mecidiyeköy'den Metro - M2 ile gitmek 11 dk, Mecidiyeköy'den Otobüs - 252, Otobüs - 30A ile gitmek 21 dk, Taksim'den Metro - M2 ile gitmek 10 dk sürer.</p>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 8</div>
+  <img src="http://www.wtg-global.net/wp-content/uploads/2015/09/Brasserie23.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 8</div>
+  <img src="http://viva-zone-2.8l7cnlz7is.netdna-cdn.com/wp-content/uploads/2016/10/karabatak-kafe-cafe-kahve-karakoy-istanbul-best-coffee-shops-must-see-visit-top-turkey.jpg" style="width:100%">
+<p>Karaköy - Beşiktaş. Beşiktaş'tan Otobüs - 30D ile gitmek 18 dk, Şişli/Mecidiyeköy'den Metro - M2, Otobüs - 54E ile gitmek 15 dk, Kadıköy'den Vapur - HEYBELIADA - KADIKÖY - EMINÖNÜ ile gitmek 30 dk, Atatürk Havalimanı'ndan Metro - M1A, Otobüs - 78 ile gitmek 50 dk, Taksim'den Metro - M2, Otobüs - EM1 ile gitmek 13 dk sürer. </p>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 8</div>
+  <img src="https://cdn.yemek.com/uploads/2016/08/karakoy-instagram.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+</div>
+
 
 <!-- Footer -->
 <table id='Footer'>
@@ -72,7 +203,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     <td><a href="https://www.youtube.com"><img src="https://image.freepik.com/free-icon/social-youtube-circle_318-26588.jpg" width="30" height="30"></td>
     <td><a href="https://www.snapchat.com"><img src="https://www.freepnglogos.com/uploads/black-snapchat-logo-picture-13.png" width="30" height="30"></td>
     <td><img src="http://freevector.co/wp-content/uploads/2013/01/34441-printer-tool.png" width="30" height="30" onclick="myFunction()"></td>
-    </tr>
+   </tr>
 </tbody>
 </table>
 
@@ -104,9 +235,27 @@ function w3_open() {document.getElementById("mySidebar").style.display = "block"
 
 function w3_close() {document.getElementById("mySidebar").style.display = "none";
     document.getElementById("myOverlay").style.display = "none";}
-  
+
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {showSlides(slideIndex += n);}
+
+function currentSlide(n) {showSlides(slideIndex = n);}
+
+function showSlides(n) {
+ var i;
+ var slides = document.getElementsByClassName("mySlides");
+ var dots = document.getElementsByClassName("dot");
+ if (n > slides.length) {slideIndex = 1}
+ if (n < 1) {slideIndex = slides.length}
+ for (i = 0; i < slides.length; i++) {slides[i].style.display = "none";}
+ for (i = 0; i < dots.length; i++) {dots[i].className = dots[i].className.replace(" active", "");}
+ slides[slideIndex-1].style.display = "block";
+ dots[slideIndex-1].className += " active";}
+
 function myFunction() {window.print();}
-  
+
 </script>
 
 </body>
